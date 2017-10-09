@@ -53,19 +53,30 @@ $cakeDescription = 'Aplicación para generar informes para el centro norteameric
 		&nbsp
 	</nav>
 
-	
-
 	<aside  class="left-side">
     	<div class="menu" >
       		<ul class="menu__list">
 	       		<li>
 	          		<input id="group-1" type="checkbox" hidden/>
-	          		<label for="group-1">Profesores</label>
+		          		
+	          		<?= 
+	          		$this->Html->link(
+	   				 	'Profesor',
+	    				'/profesor',
+	    				array('class' => 'button', 'target' => '_blank')
+    					); 
+    				?>
 	        	</li>
 
 	        	<li>
 		          <input id="group-2" type="checkbox" hidden />
-		          <label for="group-2">Alumno</label>
+		          <?= 
+	          		$this->Html->link(
+	   				 	'Alumno',
+	    				'/alumno',
+	    				array('class' => 'button', 'target' => '_blank')
+    					); 
+    				?>
 	         	</li>
       		</ul>
    		</div>

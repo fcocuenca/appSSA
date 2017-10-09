@@ -75,6 +75,15 @@ Router::scope('/', function (RouteBuilder $routes) {
     $routes->fallbacks(DashedRoute::class);
 });
 
+Router::scope('/profesor', function (RouteBuilder $routes) {
+    $routes->connect('/index',['controller' =>'Profesor', 'action'=>'index']);
+});
+
+Router::scope('/alumno', function (RouteBuilder $routes) {
+    $routes->connect('/index',['controller' =>'Alumno', 'action'=>'index']);
+});
+
+
 /**
  * Load all plugin routes. See the Plugin documentation on
  * how to customize the loading of plugin routes.
