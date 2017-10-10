@@ -5,14 +5,14 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Alumno'), ['action' => 'index']) ?></li>
+        <li class="heading"><?= __('Acciones') ?></li>
+        <li><?= $this->Html->link(__('Volver'), ['action' => 'index']) ?></li>
     </ul>
 </nav>
 <div class="alumno form large-9 medium-8 columns content">
     <?= $this->Form->create($alumno) ?>
     <fieldset>
-        <legend><?= __('Add Alumno') ?></legend>
+        <legend><?= __('Añadir Alumno') ?></legend>
         <?php
             echo $this->Form->control('nombre');
             echo $this->Form->control('apellido1');

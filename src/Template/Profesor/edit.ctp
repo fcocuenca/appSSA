@@ -5,20 +5,20 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
+        <li class="heading"><?= __('Acciones') ?></li>
         <li><?= $this->Form->postLink(
-                __('Delete'),
+                __('Borrar profesor'),
                 ['action' => 'delete', $profesor->id_profesor],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $profesor->id_profesor)]
+                ['confirm' => __('Vas a eliminar el profesor: {0} !!! estas seguro? ', $profesor->nombre)]
             )
         ?></li>
-        <li><?= $this->Html->link(__('List Profesor'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Volver'), ['action' => 'index']) ?></li>
     </ul>
 </nav>
 <div class="profesor form large-9 medium-8 columns content">
     <?= $this->Form->create($profesor) ?>
     <fieldset>
-        <legend><?= __('Edit Profesor') ?></legend>
+        <legend><?= __('Editar Profesor:')?></legend>
         <?php
             echo $this->Form->control('nombre');
             echo $this->Form->control('apellido1');

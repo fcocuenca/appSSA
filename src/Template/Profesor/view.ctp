@@ -6,11 +6,10 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Profesor'), ['action' => 'edit', $profesor->id_profesor]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Profesor'), ['action' => 'delete', $profesor->id_profesor], ['confirm' => __('Are you sure you want to delete # {0}?', $profesor->id_profesor)]) ?> </li>
-        <li><?= $this->Html->link(__('List Profesor'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Profesor'), ['action' => 'add']) ?> </li>
+        <li class="heading"><?= __('Acciones') ?></li>
+        <li><?= $this->Html->link(__('Editar profesor'), ['action' => 'edit', $profesor->id_profesor]) ?> </li>
+        <li><?= $this->Form->postLink(__('Borrar profesor'), ['action' => 'delete', $profesor->id_profesor], ['confirm' => __('Vas a eliminar el profesor: {0} !!! estas seguro? ', $profesor->nombre)]) ?> </li>
+        <li><?= $this->Html->link(__('Volver'), ['action' => 'index']) ?> </li>
     </ul>
 </nav>
 <div class="profesor view large-9 medium-8 columns content">
@@ -38,3 +37,5 @@
         </tr>
     </table>
 </div>
+
+ ['confirm' => __('Vas a eliminar el profesor: {0} !!! estas seguro? ', $profesor->nombre)]

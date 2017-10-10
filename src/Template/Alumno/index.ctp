@@ -4,12 +4,15 @@
  * @var \App\Model\Entity\Alumno[]|\Cake\Collection\CollectionInterface $alumno
  */
 ?>
+
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Alumno'), ['action' => 'add']) ?></li>
+        <li class="heading"><?= __('Acciones') ?></li>
+        <li><?= $this->Html->link(__('Añadir alumno'), ['action' => 'add']) ?></li>
     </ul>
 </nav>
+
+
 <div class="alumno index large-9 medium-8 columns content">
     <h3><?= __('Alumno') ?></h3>
     <table cellpadding="0" cellspacing="0">
@@ -32,9 +35,9 @@
                 <td><?= h($alumno->apellido2) ?></td>
                 <td><?= $this->Number->format($alumno->telefono) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $alumno->id_alumno]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $alumno->id_alumno]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $alumno->id_alumno], ['confirm' => __('Are you sure you want to delete # {0}?', $alumno->id_alumno)]) ?>
+                    <?= $this->Html->link(__('Ver'), ['action' => 'view', $alumno->id_alumno]) ?>
+                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $alumno->id_alumno]) ?>
+                    <?= $this->Form->postLink(__('Borrar'), ['action' => 'delete', $alumno->id_alumno], ['confirm' => __('Are you sure you want to delete # {0}?', $alumno->id_alumno)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
@@ -48,6 +51,6 @@
             <?= $this->Paginator->next(__('next') . ' >') ?>
             <?= $this->Paginator->last(__('last') . ' >>') ?>
         </ul>
-        <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
+         <p><?= $this->Paginator->counter(['format' => __('Página {{page}} de {{pages}}, mostrando {{current}} Alumno en {{count}} total')]) ?></p>
     </div>
 </div>

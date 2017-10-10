@@ -7,12 +7,12 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Form->postLink(
-                __('Delete'),
+                __('Borrar alumno'),
                 ['action' => 'delete', $alumno->id_alumno],
                 ['confirm' => __('Are you sure you want to delete # {0}?', $alumno->id_alumno)]
             )
         ?></li>
-        <li><?= $this->Html->link(__('List Alumno'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Volver'), ['action' => 'index']) ?></li>
     </ul>
 </nav>
 <div class="alumno form large-9 medium-8 columns content">

@@ -6,11 +6,10 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Alumno'), ['action' => 'edit', $alumno->id_alumno]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Alumno'), ['action' => 'delete', $alumno->id_alumno], ['confirm' => __('Are you sure you want to delete # {0}?', $alumno->id_alumno)]) ?> </li>
-        <li><?= $this->Html->link(__('List Alumno'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Alumno'), ['action' => 'add']) ?> </li>
+        <li class="heading"><?= __('Acciones') ?></li>
+        <li><?= $this->Html->link(__('Editar alumno'), ['action' => 'edit', $alumno->id_alumno]) ?> </li>
+        <li><?= $this->Form->postLink(__('Borrar alumno'), ['action' => 'delete', $alumno->id_alumno], ['confirm' => __('Are you sure you want to delete # {0}?', $alumno->id_alumno)]) ?> </li>
+        <li><?= $this->Html->link(__('Volver'), ['action' => 'index']) ?> </li>
     </ul>
 </nav>
 <div class="alumno view large-9 medium-8 columns content">
