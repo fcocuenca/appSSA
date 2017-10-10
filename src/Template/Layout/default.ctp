@@ -35,9 +35,12 @@
     <aside  class="left-side">
         <div class="menu" >
             <ul class="menu__list">
+                
+                <br>
+                <span class="texto">Elementos de la BD</span>
+
                 <li>
                     <input id="group-1" type="checkbox" hidden/>
-                        
                     <?= 
                     $this->Html->link(
                         'Profesor',

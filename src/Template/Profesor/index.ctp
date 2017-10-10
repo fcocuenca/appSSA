@@ -5,15 +5,17 @@
  */
 ?>
 <!--BARRA-->
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
+
+<div class="acciones" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Acciones') ?></li>
         <li><?= $this->Html->link(__('Añadir profesor'), ['action' => 'add']) ?></li>
     </ul>
-</nav>
+</div>
 
+<div class="">
 <!--TABLA DE CONTENIDO-->
-<div class="profesor index large-9 medium-8 columns content">
+<div class="index profesor large-9 medium-8 columns content">
     <h3><?= __('Profesor') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
@@ -56,4 +58,6 @@
         </ul>
         <p><?= $this->Paginator->counter(['format' => __('Página {{page}} de {{pages}}, mostrando {{current}} Profesor en {{count}} total')]) ?></p>
     </div>
+</div>
+
 </div>

@@ -5,7 +5,7 @@
  */
 ?>
 
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
+<nav class="acciones" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Acciones') ?></li>
         <li><?= $this->Html->link(__('Añadir alumno'), ['action' => 'add']) ?></li>
@@ -37,7 +37,7 @@
                 <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['action' => 'view', $alumno->id_alumno]) ?>
                     <?= $this->Html->link(__('Editar'), ['action' => 'edit', $alumno->id_alumno]) ?>
-                    <?= $this->Form->postLink(__('Borrar'), ['action' => 'delete', $alumno->id_alumno], ['confirm' => __('Are you sure you want to delete # {0}?', $alumno->id_alumno)]) ?>
+                    <?= $this->Form->postLink(__('Borrar'), ['action' => 'delete', $alumno->id_alumno], ['confirm' => __('Vas a eliminar el alumno: {0} !!! estas seguro? ', $alumno->nombre)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>

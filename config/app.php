@@ -345,3 +345,6 @@ return [
         'defaults' => 'php',
     ],
 ];
+
+
+CakePlugin::load('ReportManager',array('bootstrap' => true));

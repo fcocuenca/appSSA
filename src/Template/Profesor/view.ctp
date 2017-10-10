@@ -4,7 +4,7 @@
  * @var \App\Model\Entity\Profesor $profesor
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
+<nav class="acciones" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Acciones') ?></li>
         <li><?= $this->Html->link(__('Editar profesor'), ['action' => 'edit', $profesor->id_profesor]) ?> </li>
@@ -13,7 +13,7 @@
     </ul>
 </nav>
 <div class="profesor view large-9 medium-8 columns content">
-    <h3><?= h($profesor->id_profesor) ?></h3>
+    <h3><?= h($profesor->nombre) ?> <?= h($profesor->apellido1) ?></h3>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Nombre') ?></th>
@@ -38,4 +38,3 @@
     </table>
 </div>
 
- ['confirm' => __('Vas a eliminar el profesor: {0} !!! estas seguro? ', $profesor->nombre)]
